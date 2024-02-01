@@ -8,8 +8,8 @@ export default function getResponseFromAPI() {
         reject(new Error('Could not resolve data'));
       }
     }, 2000);
-  })
-};
+  });
+}
 
 if (require.main === module) {
   const response = getResponseFromAPI();
